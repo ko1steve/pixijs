@@ -18,6 +18,7 @@ export class GmaeApplication {
 		this.appConfig = new MainConfig();
 		document.title = this.appConfig.title;
 		document.body.style.overflow = 'hidden';
+
 		this.mainContainer = <HTMLDivElement> document.getElementById( 'mainContainer' );
 		this.pixi = new PIXI.Application( this.appConfig );
 		this.tickStart();

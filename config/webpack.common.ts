@@ -42,10 +42,6 @@ module.exports = {
 			'src': Path.resolve( appDir, 'src/' )
 		}
 	},
-	output: {
-		filename: 'bundle.js',
-		path: Path.resolve( appDir, '../dist' ),
-	},
 	target: 'web',
 
 	plugins: [

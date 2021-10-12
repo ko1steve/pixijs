@@ -13,22 +13,10 @@
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
 		"noUnusedLocals": false,
-		"baseUrl": "./",
-		"paths": {
-			"ngui/*": [
-				"ngui/*"
-			],
-			"slotngf/*": [
-				"slotngf/*"
-			],
-			"corengf/*": [
-				"slotngf/corengf/*"
-			]
-		}
+		"baseUrl": "./"
 	},
 	"exclude": [
 		"node_modules",
-		"bin",
 		"dist"
 	],
 	"types": [
