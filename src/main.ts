@@ -18,7 +18,8 @@ export class GmaeApplication {
 		this.appConfig = new MainConfig();
 		document.title = this.appConfig.title;
 		document.body.style.overflow = 'hidden';
-		this.createElements();
+		this.mainContainer = <HTMLDivElement> document.getElementById( 'mainContainer' );
+		this.pixi = new PIXI.Application( this.appConfig );
 		this.tickStart();
 	}
 
@@ -28,15 +29,6 @@ export class GmaeApplication {
 			TWEEN.update()
 		}
 		requestAnimationFrame( animate )
-	}
-
-	protected createElements (): void {
-		this.mainContainer = <HTMLDivElement> document.getElementById( 'mainContainer' );
-		this.setupPixiApplication();
-	}
-
-	protected setupPixiApplication (): void {
-		this.pixi = new PIXI.Application( this.appConfig );
 	}
 
 }
