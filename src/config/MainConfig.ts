@@ -1,5 +1,5 @@
 export class MainConfig implements IMainConfig {
-	public title: string = 'Slot Test';
+	public title: string = 'Pixi Js';
 	public width = 1280;
 	public height = 720;
 	public backgroundColor = 0x000000;
